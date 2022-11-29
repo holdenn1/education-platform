@@ -36,6 +36,7 @@
   width: 100%;
   height: 800px;
   background: #10b582;
+  margin-bottom: 120px;
 }
 @media screen and (max-width: 624px) {
   .main-block {
@@ -233,7 +234,7 @@
 @media screen and (max-width: 1024px) and (max-width: 760px) {
   .main-block .main-block__row .main-block__item:nth-child(2) .btn-container .scroll-down {
     position: fixed;
-    bottom: 70px;
+    bottom: 120px;
     right: 26px;
     width: 90px;
     height: 90px;
@@ -245,12 +246,17 @@
 }
 @media screen and (max-width: 1024px) and (max-width: 624px) {
   .main-block .main-block__row .main-block__item:nth-child(2) .btn-container .scroll-down {
-    bottom: 220px;
+    bottom: 300px;
   }
 }
 @media screen and (max-width: 1024px) {
   .main-block .main-block__row .main-block__item:nth-child(2) .btn-container .main-btn {
     margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 760px) {
+  .main-block .main-block__row .main-block__item:nth-child(2) .btn-container .main-btn {
+    margin-bottom: 70px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -265,6 +271,32 @@
   .main-block .main-block__item:nth-child(2) {
     margin: auto;
   }
+}
+
+.advantages {
+  margin: 0 auto 120px;
+}
+.advantages__row {
+  display: flex;
+  justify-content: space-around;
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+}
+.advantages__item-title {
+  margin-bottom: 15px;
+}
+.advantages__item-description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #353a5a;
 }
 
 .container {

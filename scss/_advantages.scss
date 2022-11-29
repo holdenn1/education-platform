@@ -1,0 +1,25 @@
+.advantages {
+	margin: 0 auto 120px;
+	&__row {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 270px;
+	}
+	&__item-title {
+		margin-bottom: 15px;
+	}
+	&__item-description {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 120%;
+		text-align: center;
+		color: #353a5a;
+	}
+}
