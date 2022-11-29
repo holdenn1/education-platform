@@ -1,0 +1,121 @@
+.about-us {
+	margin-bottom: 120px;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__description-container {
+		max-width: 500px;
+	}
+	&__description {
+		margin: 65px 0 14px;
+		h3 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 58px;
+			line-height: 100%;
+			font-feature-settings: "pnum" on, "lnum" on;
+			color: #353a5a;
+		}
+		p {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			color: #353a5a;
+			margin: 16px 0 32px;
+		}
+		.all-teachers {
+			width: 230px;
+			height: 56px;
+			background: #10b582;
+			border-radius: 0px 20px;
+			border: none;
+			a {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 100%;
+				color: #fdfdfd;
+			}
+		}
+	}
+	.our-teachers {
+		max-width: 570px;
+		display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		&__item {
+			width: 170px;
+			&:nth-child(1) {
+				margin: 0 15px 0 0;
+			}
+			&:nth-child(2) {
+				margin: 0 15px 15px;
+			}
+			&:nth-child(3) {
+				margin: 0 0 15px 15px;
+			}
+			&:nth-child(4) {
+				margin: 15px 15px 0 0;
+			}
+			&:nth-child(5) {
+				margin: 15px 15px 0;
+			}
+			&:nth-child(6) {
+				margin: 15px 0 0 15px;
+			}
+			img {
+				margin-bottom: 15px;
+			}
+			p {
+				font-family: "Raleway";
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 130%;
+				text-align: center;
+				color: #353a5a;
+			}
+		}
+	}
+	@media screen and (max-width: 1200px) {
+		&__container {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__description-container {
+			max-width: 1000px;
+		}
+		&__description {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+			margin: 0;
+			.all-teachers {
+				margin-bottom: 50px;
+			}
+		}
+		.our-teachers {
+			display: flex;
+			justify-content: space-between;
+			max-width: 1000px;
+			height: 220px;
+			overflow: hidden;
+			&__item {
+				padding: 0 15px;
+				&:nth-child(odd) {
+					margin: 0;
+				}
+				&:nth-child(even) {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
