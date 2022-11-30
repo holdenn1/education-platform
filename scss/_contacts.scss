@@ -2,6 +2,11 @@
 	height: 300px;
 	border-top: 1px solid #dbdce0;
 	border-bottom: 1px solid #dbdce0;
+	margin-top: 120px;
+	@extend .container;
+	@media screen and (max-width: 908px) {
+		display: none;
+	}
 	&__row {
 		display: flex;
 		justify-content: space-around;
@@ -9,14 +14,23 @@
 	}
 	&__item {
 		padding: 0 6px;
-		p {
-			font-family: "Raleway";
-			font-style: normal;
+		.first-description {
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 130%;
 			color: #353a5a;
-			margin: 30px 0 47px;
+			margin: 22px 0 47px;
+		}
+		.last-description {
+			font-weight: 400;
+			color: #353a5a;
+			a {
+				font-weight: 400;
+				color: #353a5a;
+				&:hover {
+					color: #0020ee;
+				}
+			}
 		}
 		.link-block {
 			width: 116px;
@@ -24,34 +38,26 @@
 			justify-content: space-between;
 		}
 		h4 {
-			font-family: "Raleway";
-			font-style: normal;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 100%;
 			color: #353a5a;
 			margin-bottom: 30px;
 		}
 		.contacts__list {
-			li{
+			li {
 				margin: 10px 0;
-				&:first-child{
+				&:first-child {
 					margin-top: 0;
 				}
-				&:last-child{
+				&:last-child {
 					margin-bottom: 0;
 				}
 				a {
-					font-family: "Raleway";
-					font-style: normal;
 					font-weight: 400;
-					font-size: 16px;
-					line-height: 100%;
 					color: #353a5a;
-					
+					&:hover {
+						color: #0020ee;
+					}
 				}
 			}
-			
 		}
 		&:first-child {
 			width: 270px;

@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+
+@import "_stock-styles";
 @import "_header";
 @import "_main-block";
 @import "_advantages";
@@ -6,12 +9,7 @@
 @import "_courses";
 @import "_join";
 @import "_contacts";
+@import "_footer";
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
 
-.container {
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
-	
-}
+

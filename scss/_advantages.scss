@@ -1,5 +1,6 @@
 .advantages {
 	margin: 0 auto 120px;
+	@extend .container;
 	&__row {
 		display: flex;
 		justify-content: space-around;
@@ -14,8 +15,7 @@
 		margin-bottom: 15px;
 	}
 	&__item-description {
-		font-family: "Raleway";
-		font-style: normal;
+		
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 120%;

@@ -1,18 +1,13 @@
 .courses {
+	@extend .container;
 	&__container {
 		width: 100%;
-		
 		margin-bottom: 120px;
 		display: flex;
 		flex-direction: column;
-		
 	}
 	&__title {
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 500;
 		font-size: 58px;
-		line-height: 100%;
 		font-feature-settings: "pnum" on, "lnum" on;
 		color: #353a5a;
 		margin-bottom: 60px;
@@ -34,30 +29,13 @@
 			margin: 20px 20px 15px;
 		}
 		&-img-description {
-			font-family: "Raleway";
-			font-style: normal;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 100%;
 			font-feature-settings: "pnum" on, "lnum" on;
 			color: #353a5a;
 			text-align: center;
 		}
 	}
 	.btn-all-courses {
-		width: 230px;
-		height: 56px;
-		background: #10b582;
-		border-radius: 0px 20px;
-		border: none;
+		@include green-btn(230px, 56px, #10b582, 0px 20px);
 		margin: auto;
-		a {
-			font-family: "Raleway";
-			font-style: normal;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 100%;
-			color: #fdfdfd;
-		}
 	}
 }

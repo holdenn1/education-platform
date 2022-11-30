@@ -1,5 +1,6 @@
 .about-us {
 	margin-bottom: 120px;
+	@extend .container;
 	&__container {
 		display: flex;
 		justify-content: space-between;
@@ -10,37 +11,18 @@
 	&__description {
 		margin: 65px 0 14px;
 		h3 {
-			font-family: "Raleway";
-			font-style: normal;
-			font-weight: 500;
 			font-size: 58px;
-			line-height: 100%;
 			font-feature-settings: "pnum" on, "lnum" on;
 			color: #353a5a;
 		}
 		p {
-			font-family: "Raleway";
-			font-style: normal;
 			font-weight: 400;
-			font-size: 16px;
 			line-height: 150%;
 			color: #353a5a;
 			margin: 16px 0 32px;
 		}
 		.all-teachers {
-			width: 230px;
-			height: 56px;
-			background: #10b582;
-			border-radius: 0px 20px;
-			border: none;
-			a {
-				font-family: "Raleway";
-				font-style: normal;
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 100%;
-				color: #fdfdfd;
-			}
+			@include green-btn(230px, 56px, #10b582, 0px 20px);
 		}
 	}
 	.our-teachers {
@@ -72,8 +54,6 @@
 				margin-bottom: 15px;
 			}
 			p {
-				font-family: "Raleway";
-				font-style: normal;
 				font-weight: 400;
 				font-size: 14px;
 				line-height: 130%;
