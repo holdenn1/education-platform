@@ -41,6 +41,6 @@
 		margin: 20px 0 50px;
 	}
 	.join-btn {
-		@include yellow-btn(230px, 56px, #fa9f42, 0px 20px);
+		@include btn-styles(230px, 56px, #fa9f42, 0px 20px);
 	}
 }

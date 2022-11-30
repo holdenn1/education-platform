@@ -8,11 +8,31 @@
 	top: 0;
 	left: 0;
 	.nav-bar {
-		width: 650px;
+		width: 920px;
 		height: 24px;
+		display: flex;
+		justify-content: space-between;
+		@media screen and (max-width:768px) {
+			display: none;
+		}
 		&__list {
 			display: flex;
 			justify-content: space-around;
+			width: 570px;
+		}
+		.desctop-form{
+			position: relative;
+			bottom: 12px;
+			margin-right: 10px;
+			.sign-in{
+				@include btn-styles(74px, 30px, #0075ee, 10px 0px);
+				@extend %text-style;
+				margin-right: 8px;
+			}
+			.sign-up{
+				@include btn-styles(74px, 30px, #fa9f42, 10px 0px);
+				@extend %text-style;
+			}
 		}
 		&__item {
 			margin-bottom: 8px;
@@ -22,6 +42,51 @@
 			&:hover {
 				border-bottom: 2px dashed #fa9f42;
 			}
+		}
+	}
+	.mobile-nav-bar{
+		display: none;
+		@media screen and (max-width:768px) {
+			display: flex;
+			justify-content: space-around;
+			max-width: 768px;
+			width: 100%;
+		}
+		.logo{
+			img{
+				position: relative;
+				top: 10px;
+			}
+		
+		}
+		.mobile-menu{
+			&__pad-img{
+				cursor: pointer;
+				@media screen and (max-width:460px){
+					display: none;
+				}
+			}
+			&__phone-img{
+				display: none;
+				cursor: pointer;
+				@media screen and (max-width:460px){
+					display: block;
+				}
+			}
+		}
+		.mobile-form{
+			@media screen and (max-width:460px){
+				display: none;
+			}
+		}
+		.sign-in{
+			@include btn-styles(74px, 30px, #0075ee, 10px 0px);
+			@extend %text-style;
+			margin-right: 8px;
+		}
+		.sign-up{
+			@include btn-styles(74px, 30px, #fa9f42, 10px 0px);
+			@extend %text-style;
 		}
 	}
 }

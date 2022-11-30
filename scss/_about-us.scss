@@ -22,7 +22,7 @@
 			margin: 16px 0 32px;
 		}
 		.all-teachers {
-			@include green-btn(230px, 56px, #10b582, 0px 20px);
+			@include btn-styles(230px, 56px, #10b582, 0px 20px);
 		}
 	}
 	.our-teachers {

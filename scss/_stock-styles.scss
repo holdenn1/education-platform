@@ -10,6 +10,15 @@ a {
 	color: #fdfdfd;
 }
 
+%text-style{
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+	color: #fdfdfd;
+}
+
 .container {
 	max-width: 1200px;
 	padding: 0 15px;
@@ -20,16 +29,9 @@ button {
 	border: none;
 }
 
-@mixin yellow-btn($w, $h, $bgr, $br) {
-	width: 230px;
-	height: 56px;
-	background: #fa9f42;
-	border-radius: 0px 20px;
-}
-
-@mixin green-btn($w, $h, $bgr, $br) {
-	width: 230px;
-	height: 56px;
-	background: #10b582;
-	border-radius: 0px 20px;
+@mixin btn-styles($w, $h, $bgr, $br) {
+	width: $w;
+	height: $h;
+	background: $bgr;
+	border-radius: $br;
 }

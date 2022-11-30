@@ -11,6 +11,15 @@ a {
   color: #fdfdfd;
 }
 
+.header .mobile-nav-bar .sign-up, .header .mobile-nav-bar .sign-in, .header .nav-bar .desctop-form .sign-up, .header .nav-bar .desctop-form .sign-in {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fdfdfd;
+}
+
 .container, .footer, .contacts, .courses, .about-us, .advantages {
   max-width: 1200px;
   padding: 0 15px;
@@ -32,18 +41,94 @@ button {
   left: 0;
 }
 .header .nav-bar {
-  width: 650px;
+  width: 920px;
   height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .header .nav-bar {
+    display: none;
+  }
 }
 .header .nav-bar__list {
   display: flex;
   justify-content: space-around;
+  width: 570px;
+}
+.header .nav-bar .desctop-form {
+  position: relative;
+  bottom: 12px;
+  margin-right: 10px;
+}
+.header .nav-bar .desctop-form .sign-in {
+  width: 74px;
+  height: 30px;
+  background: #0075ee;
+  border-radius: 10px 0px;
+  margin-right: 8px;
+}
+.header .nav-bar .desctop-form .sign-up {
+  width: 74px;
+  height: 30px;
+  background: #fa9f42;
+  border-radius: 10px 0px;
 }
 .header .nav-bar__item {
   margin-bottom: 8px;
 }
 .header .nav-bar__link:hover {
   border-bottom: 2px dashed #fa9f42;
+}
+.header .mobile-nav-bar {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .header .mobile-nav-bar {
+    display: flex;
+    justify-content: space-around;
+    max-width: 768px;
+    width: 100%;
+  }
+}
+.header .mobile-nav-bar .logo img {
+  position: relative;
+  top: 10px;
+}
+.header .mobile-nav-bar .mobile-menu__pad-img {
+  cursor: pointer;
+}
+@media screen and (max-width: 460px) {
+  .header .mobile-nav-bar .mobile-menu__pad-img {
+    display: none;
+  }
+}
+.header .mobile-nav-bar .mobile-menu__phone-img {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 460px) {
+  .header .mobile-nav-bar .mobile-menu__phone-img {
+    display: block;
+  }
+}
+@media screen and (max-width: 460px) {
+  .header .mobile-nav-bar .mobile-form {
+    display: none;
+  }
+}
+.header .mobile-nav-bar .sign-in {
+  width: 74px;
+  height: 30px;
+  background: #0075ee;
+  border-radius: 10px 0px;
+  margin-right: 8px;
+}
+.header .mobile-nav-bar .sign-up {
+  width: 74px;
+  height: 30px;
+  background: #fa9f42;
+  border-radius: 10px 0px;
 }
 
 .main-block {
