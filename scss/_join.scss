@@ -1,0 +1,53 @@
+.join {
+	background: url(./../img/courses/photo2.png) no-repeat;
+	background-position: center;
+	max-width: 1440px;
+	height: 578px;
+	object-fit: cover;
+	background-size: cover;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 120px;
+	&__container {
+		max-width: 500px;
+		margin: auto 120px auto 0;
+		@media screen and (max-width:768px) {
+			margin: auto;
+			padding: 20px;
+		}
+	}
+	&__title {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 58px;
+		line-height: 120%;
+		color: #353a5a;
+	}
+	&__description {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 150%;
+		font-feature-settings: "pnum" on, "lnum" on;
+		color: #353a5a;
+		margin: 20px 0 50px;
+	}
+	.join-btn {
+		width: 230px;
+		height: 56px;
+		background: #fa9f42;
+		border-radius: 0px 20px;
+		border: none;
+		a {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 100%;
+			color: #fdfdfd;
+		}
+	}
+}

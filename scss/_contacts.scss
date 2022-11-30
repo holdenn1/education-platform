@@ -1,0 +1,63 @@
+.contacts {
+	height: 300px;
+	border-top: 1px solid #dbdce0;
+	border-bottom: 1px solid #dbdce0;
+	&__row {
+		display: flex;
+		justify-content: space-around;
+		margin: 80px 0 50px;
+	}
+	&__item {
+		padding: 0 6px;
+		p {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 130%;
+			color: #353a5a;
+			margin: 30px 0 47px;
+		}
+		.link-block {
+			width: 116px;
+			display: flex;
+			justify-content: space-between;
+		}
+		h4 {
+			font-family: "Raleway";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 100%;
+			color: #353a5a;
+			margin-bottom: 30px;
+		}
+		.contacts__list {
+			li{
+				margin: 10px 0;
+				&:first-child{
+					margin-top: 0;
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+				a {
+					font-family: "Raleway";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 100%;
+					color: #353a5a;
+					
+				}
+			}
+			
+		}
+		&:first-child {
+			width: 270px;
+		}
+		&:last-child {
+			width: 182px;
+		}
+	}
+}
