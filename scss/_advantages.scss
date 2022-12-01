@@ -4,12 +4,22 @@
 	&__row {
 		display: flex;
 		justify-content: space-around;
+		@media screen and (max-width: 1023px) {
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-template-rows: repeat(2,1fr);
+			justify-items: center;
+			row-gap: 40px;
+		}
+		@media screen and (max-width: 560px){
+			grid-template-columns: repeat(1,1fr);
+		}
 	}
 	&__item {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 270px;
+		max-width: 270px;
 	}
 	&__item-title {
 		margin-bottom: 15px;

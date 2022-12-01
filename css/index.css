@@ -34,17 +34,19 @@ button {
   width: 100%;
   min-height: 64px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   position: absolute;
+  z-index: 100;
   top: 0;
   left: 0;
 }
 .header .nav-bar {
   width: 920px;
-  height: 24px;
+  height: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .header .nav-bar {
@@ -58,7 +60,6 @@ button {
 }
 .header .nav-bar .desctop-form {
   position: relative;
-  bottom: 12px;
   margin-right: 10px;
 }
 .header .nav-bar .desctop-form .sign-in {
@@ -73,9 +74,6 @@ button {
   height: 30px;
   background: #fa9f42;
   border-radius: 10px 0px;
-}
-.header .nav-bar__item {
-  margin-bottom: 8px;
 }
 .header .nav-bar__link:hover {
   border-bottom: 2px dashed #fa9f42;
@@ -358,11 +356,25 @@ button {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 1023px) {
+  .advantages__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 40px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .advantages__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .advantages__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 270px;
+  max-width: 270px;
 }
 .advantages__item-title {
   margin-bottom: 15px;
@@ -555,6 +567,20 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .courses__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 40px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .courses__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .courses__item {
   width: 270px;
