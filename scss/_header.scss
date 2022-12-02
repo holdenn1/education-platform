@@ -8,15 +8,15 @@
 	z-index: 100;
 	top: 0;
 	left: 0;
-	
+
 	.nav-bar {
 		width: 920px;
 		height: 30px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		
-		@media screen and (max-width:768px) {
+
+		@media screen and (max-width: 768px) {
 			display: none;
 		}
 		&__list {
@@ -24,73 +24,102 @@
 			justify-content: space-around;
 			width: 570px;
 		}
-		.desctop-form{
+		.desctop-form {
 			position: relative;
 			margin-right: 10px;
-			.sign-in{
+			.sign-in {
 				@include btn-styles(74px, 30px, #0075ee, 10px 0px);
 				@extend %text-style;
 				margin-right: 8px;
 			}
-			.sign-up{
+			.sign-up {
 				@include btn-styles(74px, 30px, #fa9f42, 10px 0px);
 				@extend %text-style;
 			}
 		}
 		&__link {
-			
 			&:hover {
 				border-bottom: 2px dashed #fa9f42;
 			}
 		}
 	}
-	.mobile-nav-bar{
+	.mobile-nav-bar {
 		display: none;
-		@media screen and (max-width:768px) {
+		@media screen and (max-width: 768px) {
 			display: flex;
 			justify-content: space-around;
 			max-width: 768px;
 			width: 100%;
 		}
-		.logo{
-			img{
+		.logo {
+			img {
 				position: relative;
 				top: 10px;
 			}
 		}
-		.mobile-menu{
-			&__pad-img{
+		.mobile-menu {
+			&__pad-img {
 				cursor: pointer;
-				@media screen and (max-width:460px){
-					display: none;
-				}
 			}
-			&__phone-img{
+			&__phone-img {
 				display: none;
 				cursor: pointer;
-				@media screen and (max-width:460px){
+				@media screen and (max-width: 460px) {
 					display: block;
 				}
 			}
+			.overlay {
+				height: 0%;
+				width: 100%;
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				background-color: rgb(0, 0, 0);
+				background-color: rgba(0, 0, 0, 0.9);
+				overflow-y: hidden;
+				transition: 0.5s;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				&__nav-bar-list {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin-top: 40px;
+				}
+				&__nav-bar-item {
+					margin: 30px 0;
+				}
+				&__link {
+					font-size: 22px;
+				}
+				&__pad-img {
+					margin-top: 70px;
+					transform: rotate(180deg);
+					cursor: pointer;
+				}
+			}
 		}
-		.mobile-form{
-			@media screen and (max-width:460px){
+		.mobile-form {
+			@media screen and (max-width: 460px) {
 				display: none;
 			}
 		}
-		.sign-in{
+		.sign-in {
 			@include btn-styles(74px, 30px, #0075ee, 10px 0px);
 			@extend %text-style;
 			margin-right: 8px;
 		}
-		.sign-up{
+		.sign-up {
 			@include btn-styles(74px, 30px, #fa9f42, 10px 0px);
 			@extend %text-style;
 		}
 	}
 }
 
-.header_active{
+.header_active {
 	position: fixed;
 	top: 0;
 	left: 0;

@@ -96,11 +96,6 @@ button {
 .header .mobile-nav-bar .mobile-menu__pad-img {
   cursor: pointer;
 }
-@media screen and (max-width: 460px) {
-  .header .mobile-nav-bar .mobile-menu__pad-img {
-    display: none;
-  }
-}
 .header .mobile-nav-bar .mobile-menu__phone-img {
   display: none;
   cursor: pointer;
@@ -109,6 +104,39 @@ button {
   .header .mobile-nav-bar .mobile-menu__phone-img {
     display: block;
   }
+}
+.header .mobile-nav-bar .mobile-menu .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .mobile-nav-bar .mobile-menu .overlay__nav-bar-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.header .mobile-nav-bar .mobile-menu .overlay__nav-bar-item {
+  margin: 30px 0;
+}
+.header .mobile-nav-bar .mobile-menu .overlay__link {
+  font-size: 22px;
+}
+.header .mobile-nav-bar .mobile-menu .overlay__pad-img {
+  margin-top: 70px;
+  transform: rotate(180deg);
+  cursor: pointer;
 }
 @media screen and (max-width: 460px) {
   .header .mobile-nav-bar .mobile-form {

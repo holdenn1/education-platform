@@ -4,6 +4,29 @@ const header = document.querySelector('.header');
 const scrollDownArrowBtn = document.querySelector('.down-block');
 const arrowDown = document.querySelector('#scroll-down');
 const arrowUp = document.querySelector('#scroll-up');
+const menuDown = document.querySelector('.mobile-menu__pad-img');
+const menuUp = document.querySelector('.overlay__pad-img');
+const overlay = document.querySelector('.overlay');
+
+function closePadMenu() {
+	overlay.style.height = '0%';
+	console.log(event.target);
+}
+function openPadMenu() {
+	overlay.style.height = '100%';
+}
+
+function hideArrowDownMenu() {
+	if ((overlay.style.height = '100%')) {
+		menuDown.style.display = 'none';
+	}
+}
+
+function showArrowDownMenu() {
+	if ((overlay.style.height = '0%')) {
+		menuDown.style.display = 'block';
+	}
+}
 
 function addFixedForHeader() {
 	if (window.pageYOffset < 1) {
@@ -19,15 +42,15 @@ function scrollDown() {
 		if (document.documentElement.clientWidth < 624) {
 			window.scrollBy({
 				top: 602,
-				left:0,
-				behavior:'smooth'
+				left: 0,
+				behavior: 'smooth',
 			});
 		}
 		if (document.documentElement.clientWidth > 624) {
 			window.scrollBy({
 				top: 800,
-				left:0,
-				behavior:'smooth'
+				left: 0,
+				behavior: 'smooth',
 			});
 		}
 	}
@@ -48,8 +71,8 @@ function scrollUp() {
 	if (arrowUp) {
 		window.scrollTo({
 			top: 0,
-			left:0,
-			behavior:'smooth'
+			left: 0,
+			behavior: 'smooth',
 		});
 	}
 }
@@ -58,3 +81,8 @@ arrowDown.addEventListener('click', scrollDown);
 window.addEventListener('scroll', showFixedUpArrow);
 window.addEventListener('scroll', addFixedForHeader);
 scrollDownArrowBtn.addEventListener('click', scrollDown);
+
+menuUp.addEventListener('click', showArrowDownMenu);
+menuDown.addEventListener('click', hideArrowDownMenu);
+menuUp.addEventListener('click', closePadMenu);
+menuDown.addEventListener('click', openPadMenu);
