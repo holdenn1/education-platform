@@ -8,12 +8,14 @@
 	z-index: 100;
 	top: 0;
 	left: 0;
+	
 	.nav-bar {
 		width: 920px;
 		height: 30px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		
 		@media screen and (max-width:768px) {
 			display: none;
 		}
@@ -88,3 +90,10 @@
 	}
 }
 
+.header_active{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: #088f64;
+}
