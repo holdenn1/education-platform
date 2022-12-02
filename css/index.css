@@ -470,6 +470,11 @@ button {
   font-feature-settings: "pnum" on, "lnum" on;
   color: #353a5a;
 }
+@media screen and (max-width: 560px) {
+  .about-us__description h3 {
+    font-size: 36px;
+  }
+}
 .about-us__description p {
   font-weight: 400;
   line-height: 150%;
@@ -545,6 +550,14 @@ button {
     height: 220px;
     overflow: hidden;
   }
+}
+@media screen and (max-width: 1200px) and (max-width: 662px) {
+  .about-us .our-teachers {
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
   .about-us .our-teachers__item {
     padding: 0 15px;
   }
@@ -562,11 +575,21 @@ button {
   height: 600px;
   margin-bottom: 120px;
 }
+@media screen and (max-width: 560px) {
+  .learning-format {
+    height: 460px;
+  }
+}
 .learning-format__wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 600px;
+}
+@media screen and (max-width: 560px) {
+  .learning-format__wrap {
+    height: 480px;
+  }
 }
 .learning-format__img-block {
   position: relative;
@@ -588,6 +611,11 @@ button {
 .learning-format__descrption h3 {
   font-size: 58px;
   line-height: 120%;
+}
+@media screen and (max-width: 560px) {
+  .learning-format__descrption h3 {
+    font-size: 36px;
+  }
 }
 .learning-format__descrption p {
   font-weight: 400;
@@ -626,6 +654,11 @@ button {
   color: #353a5a;
   margin-bottom: 60px;
   text-align: center;
+}
+@media screen and (max-width: 560px) {
+  .courses__title {
+    font-size: 48px;
+  }
 }
 .courses__row {
   display: flex;
